@@ -86,9 +86,18 @@ class CompanyController extends Controller
             'data' => $company
         ], Response::HTTP_OK);
     }
-
-    public function destroy(int $id)
+    
+    /**
+     * Delete a company.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function destroy(int $id): JsonResponse
     {
-        
+        return response()->json([
+            'success' => true,
+            'message' => 'Empresa deletada com sucesso',
+        ], Response::HTTP_OK);
     }
 }

@@ -55,9 +55,15 @@ class CompanyService
     {
         return $this->companyRepository->update($data, $id);
     }
-
-    public function delete(int $id)
+    
+    /**
+     * Delete a company.
+     *
+     * @param int $id
+     * @return bool
+     */
+    public function delete(int $id): bool
     {
-       
+        return  $this->companyRepository->delete($id);
     }
 }
