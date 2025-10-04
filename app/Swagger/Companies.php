@@ -83,6 +83,28 @@ namespace App\Swagger;
  *         description="Erro de validação"
  *     )
  * )
+ * 
+ * /**
+ * @OA\Delete(
+ *     path="/api/v1/companies/{id}",
+ *     summary="Deleta uma empresa existente",
+ *     tags={"Companies"},
+ *     @OA\Parameter(
+ *         name="id",
+ *         in="path",
+ *         required=true,
+ *         description="ID da empresa",
+ *         @OA\Schema(type="integer", example=1)
+ *     ),
+ *     @OA\Response(
+ *         response=204,
+ *         description="Empresa deletada com sucesso (sem conteúdo)"
+ *     ),
+ *     @OA\Response(
+ *         response=404,
+ *         description="Empresa não encontrada"
+ *     )
+ * )
  */
 class Companies
 {

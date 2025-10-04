@@ -173,6 +173,33 @@
                         "description": "Erro de validação"
                     }
                 }
+            },
+            "delete": {
+                "tags": [
+                    "Companies"
+                ],
+                "summary": "Deleta uma empresa existente",
+                "operationId": "3426a4e16ef4bd88a18c3166bd66b7fd",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID da empresa",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Empresa deletada com sucesso (sem conteúdo)"
+                    },
+                    "404": {
+                        "description": "Empresa não encontrada"
+                    }
+                }
             }
         }
     },
