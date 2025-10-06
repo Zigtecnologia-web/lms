@@ -96,3 +96,5 @@ http://localhost:${APP_PORT:-80}
 ---
 
 Este README funciona como um guia completo para iniciar e executar o projeto LMS usando Laravel Sail, contemplando todos os serviços do `docker-compose.yml`.
+
+<a href="https://www.drawdb.app/editor" target="_blank">Diagrama do banco</a>
